@@ -5,7 +5,7 @@ class HashTable {
 
   _hash(key) {
     let hash = 0;
-    for (let i =0; i < key.length; i++){
+    for (let i = 0; i < key.length; i++){
         hash = (hash + key.charCodeAt(i) * i) % this.data.length
     }
     return hash;
@@ -40,9 +40,9 @@ class HashTable {
 
     const keysArray = [];
     for (let i = 0; i < this.data.length; i++) {
-      if (this.data[i]) {
-        if (this.data.length[i] > 1) {
-          for (let j = 0; j < this.data[j].length; j++) {
+      if (this.data[i] && this.data[i].length) {
+        if (this.data.length > 1) {
+          for (let j = 0; j < this.data[i].length; j++) {
             keysArray.push(this.data[i][j][0]);
           }
         } else {
@@ -51,5 +51,29 @@ class HashTable {
       }
     }
     return keysArray;
+  }
+
+  print() {
+    let printedTable = '[\n';
+
+    const keysArray = [];
+    if (this.data.length > 0) {
+      for (let i = 0; i < this.data.length; i++) {
+        if (this.data[i] && this.data[i].length) {
+          if (this.data.length > 1) {
+            printedTable += i + ': [';
+            for (let j = 0; j < this.data[i].length - 1; j++) {
+              printedTable += this.data[i][j][0] + ': ' + this.data[i][j][1] + ', ';
+            }
+            printedTable += this.data[i][this.data[i].length - 1][0] + ': ' + 
+                            this.data[i][this.data[i].length - 1][1] + '],\n';
+          } else {
+            printedTable += this.data[i][0];
+          }
+        }
+      }
+    }
+    printedTable += ']';
+    console.log(printedTable);
   }
 }

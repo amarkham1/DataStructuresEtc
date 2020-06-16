@@ -53,4 +53,16 @@ class MyArray {
       return this.data[0];
     }
   }
+
+  print() {
+    let printedArr = '[';
+    if (this.length > 0) {
+      for (let i = 0; i < this.length - 1; i++) {
+        printedArr += this.data[i] + ", ";
+      }
+      printedArr += this.data[this.length - 1];
+    }
+    printedArr += ']';
+    console.log(printedArr);
+  }
 }

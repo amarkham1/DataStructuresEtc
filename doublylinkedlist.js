@@ -13,14 +13,14 @@ class DoublyLinkedList {
     this.length = 1;
   }
 
-  printList() {
+  print() {
     const array = [];
     let currentNode = this.head;
     while(currentNode !== null){
         array.push(currentNode.value)
         currentNode = currentNode.next
     }
-    return array;
+    console.log(array);
   }
 
   append(value) {
@@ -63,7 +63,7 @@ class DoublyLinkedList {
     leader.next = nodeForRemoval.next;
     nodeForRemoval.next.prev = leader;
     this.length--;
-    return this.printList();
+    return this.print();
   }
 
   traverseToIndex(index) {
