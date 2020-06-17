@@ -1,0 +1,24 @@
+{
+  "name": "data-structures-etc",
+  "version": "1.0.0",
+  "description": "an assembly of data structures and sorting algorithms, etc...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amarkham1/DataStructuresEtc.git"
+  },
+  "keywords": [
+    "datastructure",
+    "algorithm",
+    "sorting"
+  ],
+  "author": "Andrew Markham <andrewjmarkham1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amarkham1/DataStructuresEtc/issues"
+  },
+  "homepage": "https://github.com/amarkham1/DataStructuresEtc#readme"
+}
