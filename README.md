@@ -22,12 +22,14 @@ Building this project allowed me to get some hands-on experience implementing va
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development purposes.
+
 
 
 ### Installing
 
-To get this package up and running using npm, first ensure you have an npm package initialized in the desired directory using:
+These instructions will get you a copy of the project up and running on your local machine for development purposes. 
+
+To do so using npm, first ensure you have an npm package initialized in the desired directory using:
 
 ```
 npm init
