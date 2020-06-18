@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class DoublyLinkedList {
+module.exports = class DoublyLinkedList {
   constructor(value) {
     this.head = new Node(value);
     this.tail = this.head;

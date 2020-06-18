@@ -1,4 +1,4 @@
-function mergeSort (array) {
+module.exports = function mergeSort (array) {
   if (array.length === 1) {
     return array;
   }

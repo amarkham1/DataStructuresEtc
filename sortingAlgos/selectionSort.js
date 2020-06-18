@@ -1,4 +1,4 @@
-function selectionSort(array) {
+module.exports = function selectionSort(array) {
   let sortedArray = array;
   let length = array.length;
 

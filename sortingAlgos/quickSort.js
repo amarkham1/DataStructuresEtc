@@ -1,4 +1,4 @@
-function quickSort(array, left = 0, right = array.length - 1){
+module.exports = function quickSort(array, left = 0, right = array.length - 1){
   const len = array.length; 
   let pivot;
   let partitionIndex;

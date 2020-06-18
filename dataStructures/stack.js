@@ -5,7 +5,7 @@ class Node {
   }
 }
 
-class Stack {
+module.exports = class Stack {
   constructor(){
     this.top = null;
     this.bottom = null;
@@ -45,5 +45,30 @@ class Stack {
 
   isEmpty() {
     return this.length === 0;
+  }
+
+  print() {
+    let printedStack = 'Printing stack:\n';
+    if (this.isEmpty()) {
+      printedStack += '<empty stack>';
+      console.log(printedStack);
+    } else {
+      let currentNode = this.top;
+      if (this.length === 1) {
+        printedStack += this.top.value + ' <-- top, bottom\n';
+        console.log(printedStack);
+      } else {
+        while (currentNode.next) {
+          if (currentNode === this.top) {
+            printedStack += this.top.value + ' <-- top\n';
+          } else {
+            printedStack += currentNode.value + '\n';
+          }
+          currentNode = currentNode.next;
+        }
+        printedStack += currentNode.value + ' <-- bottom\n';
+        console.log(printedStack);
+      }
+    }
   }
 }

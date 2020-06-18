@@ -1,6 +1,6 @@
 {
   "name": "data-structures-etc",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "an assembly of data structures and sorting algorithms, etc...",
   "main": "index.js",
   "scripts": {

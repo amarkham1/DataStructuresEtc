@@ -1,4 +1,4 @@
-function insertionSort(array) {
+module.exports = function insertionSort(array) {
   let length = array.length;
   for (let i = 1; i < length; i++) {
     let key = array[i];
